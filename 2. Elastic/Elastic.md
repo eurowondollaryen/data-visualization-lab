@@ -104,4 +104,15 @@ sudo apt install openjdk-11-jdk
 - Test your Logstash configuration:
   ```
   sudo -u logstash /usr/share/logstash/bin/logstash -t -f /etc/logstash/conf.d/myconfig.conf
+  ```
+  
+  
+## Simple bar chart viualization in Kibana
+1. Open Kibana and go to the "Visualize" section.
+2. Click on "Create a visualization" and select "Vertical Bar Chart".
+3. Choose the desired index pattern and specify any filters or aggregations you want to apply to the data.
+4. In the "Metrics & Axes" tab, under "Metrics", select "Y-Axis" and choose an aggregation (e.g., "Count", "Sum", etc.) for the vertical axis.
+5. Under "Buckets", select "X-Axis" and choose an aggregation (e.g., "Terms") for the horizontal axis. Specify the field you want to aggregate on (e.g., "country", "product", etc.).
+6. Customize the appearance of the chart using the available options in the "Options" and "Panel Settings" tabs.
+7. Click "Save" to save the visualization.
  
